@@ -62,7 +62,7 @@ public class HeaderViewRecyclerAdapter extends RecyclerView.Adapter {
 	public int getItemViewType(int position) {
         //判断当前条目是什么类型的---决定渲染什么视图给什么数据
         int numHeaders = getHeadersCount();
-        if (position < numHeaders) {//��ͷ��
+        if (position < numHeaders) {//是头部
             return RecyclerView.INVALID_TYPE;
         }
         //正常条目部分
