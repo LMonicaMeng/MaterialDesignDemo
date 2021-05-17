@@ -81,7 +81,7 @@ public class DividerItemDecoration extends RecyclerView.ItemDecoration {
 			RecyclerView.State state) {
 		//1.调用此方法（首先会先获取条目之间的间隙宽度---Rect矩形区域）
 		// 获得条目的偏移量(所有的条目都回调用一次该方法)
-		if(mOrientation == LinearLayoutManager.VERTICAL){//��ֱ
+		if(mOrientation == LinearLayoutManager.VERTICAL){//垂直
 			outRect.set(0, 0, 0, mDivider.getIntrinsicHeight());
 		}else{//水平
 			outRect.set(0, 0, mDivider.getIntrinsicWidth(), 0 );
