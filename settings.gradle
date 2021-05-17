@@ -1,2 +1,3 @@
+include ':recyclerwithheadfoot'
 include ':app'
 rootProject.name = "MaterialDesignDemo"
