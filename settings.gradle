@@ -1,3 +1,4 @@
+include ':navigationview'
 include ':slidingmenudrawerlayout'
 include ':Recyclerview_ItemTouchHelper'
 include ':recyclerwithheadfoot'
