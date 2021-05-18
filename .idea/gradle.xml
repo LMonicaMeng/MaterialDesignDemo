@@ -19,6 +19,7 @@
             <option value="$PROJECT_DIR$/recyclerwithheadfoot" />
             <option value="$PROJECT_DIR$/slidingmenudrawerlayout" />
             <option value="$PROJECT_DIR$/snackbar" />
+            <option value="$PROJECT_DIR$/textinputlayout" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
