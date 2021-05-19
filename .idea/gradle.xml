@@ -20,6 +20,7 @@
             <option value="$PROJECT_DIR$/slidingmenudrawerlayout" />
             <option value="$PROJECT_DIR$/snackbar" />
             <option value="$PROJECT_DIR$/textinputlayout" />
+            <option value="$PROJECT_DIR$/toolbar" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
