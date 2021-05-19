@@ -1,0 +1,121 @@
+<RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.demo.translucentscrolltoolbar.MyScrollView
+        android:id="@+id/scrollView"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:paddingTop="?attr/actionBarSize"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <Button
+                android:id="@+id/button1"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Button0" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Button1" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Button2" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Button3" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Button4" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Button" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Button" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Button" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Button" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Button" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Button" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Button" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Button" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Button" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Button" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Button" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.demo.translucentscrolltoolbar.MyScrollView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="老妖的茶壶"
+        android:background="?attr/colorPrimary"
+        >
+    </androidx.appcompat.widget.Toolbar>
+
+</RelativeLayout>

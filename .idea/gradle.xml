@@ -22,6 +22,7 @@
             <option value="$PROJECT_DIR$/snackbar" />
             <option value="$PROJECT_DIR$/textinputlayout" />
             <option value="$PROJECT_DIR$/toolbar" />
+            <option value="$PROJECT_DIR$/translucentscrolltoolbar" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
