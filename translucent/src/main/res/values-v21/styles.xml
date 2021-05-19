@@ -20,8 +20,8 @@
         <item name="colorPrimaryDark">@color/colorPrimary_pinkDark</item>
 <!--         <item name="android:windowBackground">@color/background</item> -->
 <!--         <item name="colorAccent">#906292</item> -->
-		<item name="android:navigationBarColor">@color/system_bottom_nav_color</item>
-		<item name="android:statusBarColor">@color/system_bottom_nav_color</item>
+		<item name="android:navigationBarColor">@color/colorPrimary_pink</item>
+		<item name="android:statusBarColor">@color/colorPrimary_pink</item>
     </style>
 
 </resources>
