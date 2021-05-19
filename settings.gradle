@@ -1,3 +1,4 @@
+include ':palette'
 include ':toolbar'
 include ':textinputlayout'
 include ':snackbar'
