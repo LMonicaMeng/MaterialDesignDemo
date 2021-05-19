@@ -1,6 +1,8 @@
 package com.demo.tablelayout;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -15,12 +17,12 @@ public class MainActivity extends AppCompatActivity {
 
 	private TabLayout tabLayout;
 	private String[] title = {
-			"头条",
-			"新闻",
-			"娱乐",
-			"体育",
-			"科技",
-			"美女",
+//		"头条",
+//		"新闻",
+//		"娱乐",
+//		"体育",
+//		"科技",
+//		"美女",
 			"财经",
 			"汽车",
 			"房子",
@@ -36,37 +38,43 @@ public class MainActivity extends AppCompatActivity {
 		tabLayout = (TabLayout)findViewById(R.id.tablayout);
 		MyPagerAdapter adapter = new MyPagerAdapter(getSupportFragmentManager());
 		//1.TabLayout和Viewpager关联
-		tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-
-			@Override
-			public void onTabUnselected(TabLayout.Tab arg0) {
-				// TODO Auto-generated method stub
-
-			}
-
-			@Override
-			public void onTabSelected(TabLayout.Tab tab) {
-				// 被选中的时候回调
-				viewPager.setCurrentItem(tab.getPosition(),true);
-			}
-
-			@Override
-			public void onTabReselected(TabLayout.Tab arg0) {
-				// TODO Auto-generated method stub
-
-			}
-		});
-		//2.ViewPager滑动关联tabLayout
-		viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
-
-
-		//设置tabLayout的标签来自于PagerAdapter
-		tabLayout.setTabsFromPagerAdapter(adapter);
+//		tabLayout.setOnTabSelectedListener(new OnTabSelectedListener() {
+//
+//			@Override
+//			public void onTabUnselected(Tab arg0) {
+//			}
+//
+//			@Override
+//			public void onTabSelected(Tab tab) {
+//				// 被选中的时候回调
+//				viewPager.setCurrentItem(tab.getPosition(),true);
+//			}
+//
+//			@Override
+//			public void onTabReselected(Tab arg0) {
+//			}
+//		});
+//		//2.ViewPager滑动关联tabLayout
+//		viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+//		//设置tabLayout的标签来自于PagerAdapter
+//		tabLayout.setTabsFromPagerAdapter(adapter);
 
 		viewPager.setAdapter(adapter);
+		//方法二：一步到位
+		tabLayout.setupWithViewPager(viewPager);
+		for (int i = 0; i < tabLayout.getTabCount(); i++) {
+			TabLayout.Tab tab = tabLayout.getTabAt(i);
+//			tab.setText(Html.toHtml(text))
+			View view = View.inflate(this, R.layout.bottom_navigation, null);
+			TextView tv_name = (TextView) view.findViewById(R.id.tv_name);
+			tv_name.setText(title[i]);
+			tab.setCustomView(view);
+//			tab.setIcon(icon)
+		}
+
 	}
 
-	class MyPagerAdapter extends FragmentPagerAdapter {
+	class MyPagerAdapter extends FragmentPagerAdapter{
 
 		public MyPagerAdapter(FragmentManager fm) {
 			super(fm);
@@ -95,7 +103,6 @@ public class MainActivity extends AppCompatActivity {
 		}
 
 	}
-
 
 
 }
