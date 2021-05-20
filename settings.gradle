@@ -1,3 +1,4 @@
+include ':fabanimation'
 include ':fab'
 include ':cardview'
 include ':translucent'
