@@ -1,3 +1,5 @@
+include ':dn_parallel'
+include ':percentsupportlayout'
 include ':fabanimation'
 include ':fab'
 include ':cardview'
