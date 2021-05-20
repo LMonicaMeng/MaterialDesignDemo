@@ -1,3 +1,4 @@
+include ':fab'
 include ':cardview'
 include ':translucent'
 include ':tablelayout'
