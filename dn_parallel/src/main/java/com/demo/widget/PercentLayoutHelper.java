@@ -32,7 +32,7 @@ import androidx.annotation.NonNull;
 import androidx.core.view.MarginLayoutParamsCompat;
 import androidx.core.view.ViewCompat;
 
-import com.ricky.android.percent.support.R;
+import com.ricky.d.welcompager2.ricky.R;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
