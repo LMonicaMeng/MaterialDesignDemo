@@ -1,3 +1,4 @@
+include ':scenetransitionanimation2'
 include ':scenetransitionanimation'
 include ':materialdesign_animation'
 include ':propertyanimation_safari'
