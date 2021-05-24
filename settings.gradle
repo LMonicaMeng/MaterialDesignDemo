@@ -1,3 +1,4 @@
+include ':svgdemo'
 include ':scenetransitionanimation2'
 include ':scenetransitionanimation'
 include ':materialdesign_animation'
