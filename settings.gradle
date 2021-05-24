@@ -1,3 +1,4 @@
+include ':propertyanimation'
 include ':custombehavior2'
 include ':custombehavior'
 include ':tablayout_viewpager_appbarlayout'
