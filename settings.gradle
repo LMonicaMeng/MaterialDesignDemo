@@ -1,3 +1,4 @@
+include ':vectordemo-master'
 include ':svgdemo'
 include ':scenetransitionanimation2'
 include ':scenetransitionanimation'

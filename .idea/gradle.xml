@@ -40,6 +40,7 @@
             <option value="$PROJECT_DIR$/toolbar" />
             <option value="$PROJECT_DIR$/translucent" />
             <option value="$PROJECT_DIR$/translucentscrolltoolbar" />
+            <option value="$PROJECT_DIR$/vectordemo-master" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
