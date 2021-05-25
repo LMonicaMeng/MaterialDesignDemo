@@ -1,3 +1,5 @@
+include ':dn_discrollview'
+include ':svg2'
 include ':vectordemo-master'
 include ':svgdemo'
 include ':scenetransitionanimation2'
